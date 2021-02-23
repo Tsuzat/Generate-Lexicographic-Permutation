@@ -18,4 +18,6 @@ Following this algorithm, the next lexicographic permutation will be [1,3,2,4], 
 This method uses about 3 comparisons and 1.5 swaps per permutation, amortized over the whole sequence, not counting the initial sort.
 Source: https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order
 
-# Feel free to use/edit and suggest. Suggestions are appreciated. 
+# Note: It is suggested to pass sorted list into function, otherwise no/less solutions could obtain. See, Example in .ipynb file.  
+
+# Feel free to use/edit and suggest. Suggestions are appreciated.
