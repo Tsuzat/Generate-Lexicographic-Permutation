@@ -25,3 +25,19 @@ def Generate_Lexicographic_Permutation(s:list):
     s[k+1:] = reversed(s[k+1:])
     
     return True
+
+if __name__ == "__main__:
+    
+    s = input() #taking input
+    
+    s = sorted(s) # sorting input and storing it as a list
+    
+    permutation = [] # to store all generated permutations
+    permutation.append(''.join(s))
+    
+    while Generate_Lexicographic_Permutation(s):
+        permutation.append(''.join(s))
+    
+    print(len(permutation))
+    for i in permutation:
+        print(i,end = " ")
